@@ -31,7 +31,7 @@ sequences = tokenizer.texts_to_sequences(movie_texts)
 padded = pad_sequences(sequences, maxlen=max_length, padding=padding_type, truncating=trunc_type)
 
 
-def load_glove_embeddings(filepath, word_index, embedding_dim):
+def load_embeddings(filepath, word_index, embedding_dim):
     vocab_size = len(word_index) + 1
     embedding_matrix = np.zeros((vocab_size, embedding_dim))
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -44,8 +44,8 @@ def load_glove_embeddings(filepath, word_index, embedding_dim):
     return embedding_matrix
 
 
-embedding_matrix = load_glove_embeddings('sgns.target.word-word.dynwin5.thr10.neg5.dim300.iter5', word_index,
-                                         embedding_dim)
+embedding_matrix = load_embeddings('sgns.target.word-word.dynwin5.thr10.neg5.dim300.iter5', word_index,
+                                   embedding_dim)
 
 model = Sequential([
     # Embedding(vocab_size, embedding_dim, input_length=max_length),
