@@ -23,8 +23,8 @@ movie_search.py：基于训练模型进行语义搜索
 
 ### 五、V2.0版本
 经过查阅资料。huggingface工具拥有优秀的支持中文的模型和分词器，因此进行优化  
-huggingface.py 导入BERT模型（bert-base-chinese），Bert分词器，基于给定的数据集训练模型，保存模型、分词器、嵌入模型
-huggingface_search.py 读取上述保存的模型，做语义搜索
+huggingface.py 导入BERT模型（bert-base-chinese），Bert分词器，基于给定的数据集训练模型，保存模型、分词器、嵌入模型  
+huggingface_search.py 读取上述保存的模型，做语义搜索  
 
 ### 六、V3.0版本
 经过测试，2.0版本程序推荐结果较1.0版本有很大改善  
