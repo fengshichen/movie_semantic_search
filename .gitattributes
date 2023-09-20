@@ -1,0 +1,2 @@
+sgns.target.word-word.dynwin5.thr10.neg5.dim300.iter5 filter=lfs diff=lfs merge=lfs -text
+电影数据集.tar.gz filter=lfs diff=lfs merge=lfs -text
